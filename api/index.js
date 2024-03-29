@@ -11,6 +11,11 @@ app.get("/api/hello/", (req, res) => {
         message: "Hello World"
     });
 });
+app.get("/api/Ark/", (req, res) => {
+    res.json({
+        message: "Hello Ark How are You?"
+    });
+});
 
 app.listen(8000, () => {
     console.log("Server running on port 8000");
